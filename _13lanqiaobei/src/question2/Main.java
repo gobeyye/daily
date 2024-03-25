@@ -8,39 +8,42 @@ package question2;
  * Time: 21:58
  */
 public class Main {
-    public static void main(String[] args){
+    //蓝桥杯要用静态变量
+    public static void main(String[] args) {
         int count = 0;
-        for(long i = 2022;i <= 2022222022;i++){
-            if(ishuiwen(i)){
+        for (long i = 2022; i <= 2022222022; i++) {
+            if (ishuiwen(i) && isshengxu(i)) {
                 count++;
-                //System.out.println(i);
+                System.out.println(i);
             }
         }
         System.out.println(count);
     }
-    public static boolean ishuiwen(long n){
-        long[] nums = new long[10];
-        int len = 0;
-        while(n != 0){
-            nums[len++] = n % 10;
-            n /= 10;
-        }
-        int right = len - 1;
-        int left = 0;
-        int mid = right / 2;
-        int begin = 1;
-        while(begin <= mid){
-            if(nums[begin] < nums[begin - 1]){
+    public static boolean isshengxu(long n){
+        String s = n + "";
+        int mid = (s.length() - 1) / 2;
+        for(int i = 1;i <= mid;i++){
+            if(s.charAt(i) < s.charAt(i - 1)){
                 return false;
             }
-            begin++;
         }
-        while(right > left){
-            if(nums[right] != nums[left]){
+        return true;
+    }
+    private static boolean check(long num) {
+        String s = num + "";
+        for (int i = 0; i < s.length() / 2; i++) {
+            if (s.charAt(i) > s.charAt(i + 1)) return false;
+        }
+        return true;
+    }
+
+
+    public static boolean ishuiwen(long n) {
+        String s = n + "";
+        for (int left = 0, right = s.length() - 1; right > left; right--, left++) {
+            if (s.charAt(right) != s.charAt(left)) {
                 return false;
             }
-            right--;
-            left++;
         }
         return true;
     }

@@ -7,7 +7,7 @@ package question4;
  * Date: 2024-03-24
  * Time: 22:27
  */
-import java.util.Scanner;
+/*import java.util.Scanner;
 import java.util.Arrays;
 public class Main {
     public static void main(String[] args){
@@ -45,5 +45,43 @@ public class Main {
 
         }
 
+    }
+}*/
+
+
+
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] a = new int[n], tmp = new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextInt();
+            tmp[i] = a[i];
+        }
+        Arrays.sort(tmp);
+        int mid = tmp[n / 2];
+        int bg_cnt = 0, sml_cnt = 0; // 记录比mid大的和比mid小的数
+        for (int i = 0; i < n; i++)
+            if (a[i] < mid) sml_cnt ++;
+            else if (a[i] > mid) bg_cnt ++;
+
+        if (bg_cnt < sml_cnt) {
+            for (int i = 0; i < n; i++)
+                if (a[i] < mid) System.out.print(mid - a[i] + " ");
+                else System.out.print(0 + " ");
+        } else if (bg_cnt == sml_cnt){
+            for (int i = 0; i < n; i++)
+                if (a[i] < mid) System.out.print(mid - a[i] + 1 + " ");
+                else System.out.print(0 + " ");
+        }else {
+            for (int i = 0; i < n; i++)
+                if (a[i] <= mid) System.out.print(mid - a[i] + 1 + " ");
+                else System.out.print(0 + " ");
+        }
     }
 }

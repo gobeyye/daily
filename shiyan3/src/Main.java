@@ -1,15 +1,12 @@
-package question8;
-
 /**
  * Created with IntelliJ IDEA.
  * Description:
- * User: HXL
- * Date: 2024-03-24
- * Time: 23:55
+ * User: ${USER}
+ * Date: ${YEAR}-${MONTH}-${DAY}
+ * Time: ${TIME}
  */
 public class Main {
     public static void main(String[] args) {
-
+        System.out.println("Hello world!");
     }
-
 }
