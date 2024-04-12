@@ -4,6 +4,13 @@ package test6;
 
 
 
+
+
+
+
+
+
+
 import java.util.*;
 class graph{
 	int[] arrayV;
@@ -49,7 +56,6 @@ class graph{
 	public int getSum() {
 		return sum - sum1;
 	}
-	
 }
 public class Main {
 	public static void main(String[] args) {
@@ -64,5 +70,4 @@ public class Main {
 		int sum = gp.getSum();
 		System.out.println(sum);		
 	}
-
 }
