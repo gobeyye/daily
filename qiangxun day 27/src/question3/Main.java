@@ -31,7 +31,6 @@ public class Main{
         }
         return max;
     }
-    public static void main(String[] args) {
 
-    }
 }
+
