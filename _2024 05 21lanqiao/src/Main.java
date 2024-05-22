@@ -8,35 +8,23 @@
 
 import java.math.BigInteger;
 import java.util.*;
+
 public class Main {
-     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        long[] numa = new long[n + 1];
-
-        for(int i = 1;i <= n;i++){
-            numa[i] = in.nextInt();
+    public static int gcd(int a,int b){
+        return b != 0 ? gcd(b,a % b) : a;
+    }
+    public static int gcd1(int a,int b){
+        int c = 1;
+        while(c != 0){
+            c = a % b;
+            a = b;
+            b = c;
         }
-
-
-            long[] count = new long[3];
-            for(int i = 1;i <= 2;i++){
-                long[] numb = new long[n + 1];
-                for(int j = 1;j <= n;j++){
-                    numb[j] = i * j;
-                    if(numb[j] % numa[j] == 0){
-//                        ret++;
-                        count[i]++;
-                    }
-                }
-            }
-            long ou = n / 2;
-            long ji = n - ou;
-            long ans = (ou * count[2]) + (ji * count[1]);
-            System.out.println(ans);
-            return;
-
-
+        return a;
+    }
+    public static void main(String[] args) {
+        int a = 2,b = 12;
+        System.out.println(gcd1(2,b));
     }
 }
 
