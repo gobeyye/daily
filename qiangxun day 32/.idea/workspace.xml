@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39748a97-be4a-4e96-b3d9-b98addab917b" name="Changes" comment="" />
+    <list default="true" id="39748a97-be4a-4e96-b3d9-b98addab917b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../_2024 05 21lanqiao/out/production/_2024 05 21lanqiao/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_2024 05 21lanqiao/out/production/_2024 05 21lanqiao/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_2024 05 21lanqiao/out/production/_2024 05 21lanqiao/question7/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_2024 05 21lanqiao/out/production/_2024 05 21lanqiao/question7/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_2024 05 21lanqiao/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../_2024 05 21lanqiao/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_2024 05 21lanqiao/src/question7/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../_2024 05 21lanqiao/src/question7/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,12 +34,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="question1.Main" />
+      <module name="qiangxun day 32" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="question1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
