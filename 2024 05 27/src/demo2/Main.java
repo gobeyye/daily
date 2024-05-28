@@ -11,8 +11,6 @@ public class Main {
 		Scanner in = new Scanner(System.in);
 		int n = in.nextInt(),k = in.nextInt();
 		long[] nums = new long[n];
-		
-		
 		//3.创建小根堆
 		PriorityQueue<Long> heap = new PriorityQueue<>();
 		
