@@ -7,6 +7,9 @@
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        String s = "abcde";
+        String tmp = "abc";
+        System.out.println(s.contains(tmp));
     }
 }

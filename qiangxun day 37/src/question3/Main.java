@@ -20,9 +20,11 @@ import java.io.*;
 // 注意类名必须为 Main, 不要有任何 package xxx 信息
 public class Main {
     static int n,m;
+    static int[][] dp;
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         n = in.nextInt();m = in.nextInt();
+        dp = new int[n][m];
         int[][] arr = new int[n][m];
         for(int i = 0;i < n;i++){
             for(int j = 0;j < m;j++){
@@ -44,6 +46,9 @@ public class Main {
     static int[] dx = {0,0,1,-1};
     static int[] dy = {1,-1,0,0};
     public static int dfs(int[][] arr,int i,int j){
+        if(dp[i][j] != 0){
+            return dp[i][j];
+        }
         int ans = 1;
         for(int k = 0;k < 4;k++){
             int x = i + dx[k];
@@ -52,6 +57,7 @@ public class Main {
                 ans = Math.max(dfs(arr,x,y) + 1,ans);
             }
         }
+        dp[i][j] = ans;
         return ans;
     }
 }
