@@ -11,7 +11,6 @@ public class test {
     public static void main(String[] args) {
         MyBlockingQueue q = new MyBlockingQueue(1000);
         Thread t1 = new Thread(() -> {
-            //要不要加锁
             int count = 1;
             while (true) {
                 try {
@@ -25,7 +24,6 @@ public class test {
             }
         });
         Thread t2 = new Thread(() -> {
-            //要不要加锁
             try {
                 while (true) {
                     Thread.sleep(1000);
