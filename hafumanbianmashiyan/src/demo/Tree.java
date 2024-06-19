@@ -50,13 +50,21 @@ public class Tree {
             ht[rnode].parent = i;
         }
     }
-    public static HCode[] CreateHCode(HTNode ht[], int n) {
+
+    /**
+     * 方法作用为：创建哈夫曼编码规则
+     * @param ht
+     * @param n
+     * @return
+     */
+    public static HCode[] createHCode(HTNode ht[], int n) {
         HCode[] hcds = new HCode[n];
         int parent; int cur;
         for (int i = 0; i < n; i++)
         {
             HCode tmp = new HCode();
             cur = i;
+            //预备工作，初始化cur 和 parent
             parent = ht[cur].parent;
             tmp.data = ht[cur].data;
             while (parent != -1)
@@ -71,9 +79,11 @@ public class Tree {
                     //右孩子
                     tmp.cd.append('1') ;
                 }
+                //向上查找
                 cur = parent;
                 parent = ht[cur].parent;
             }
+            //进行翻转
             tmp.cd = tmp.cd.reverse();
             hcds[i] = tmp;
         }

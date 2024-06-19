@@ -41,7 +41,7 @@ public class Main {
             Tree.createHT(nodes,size);
             //4. 生成哈夫曼编码
             HCode[] codes;
-            codes = Tree.CreateHCode(nodes,size);
+            codes = Tree.createHCode(nodes,size);
             //5. 根据各个字符的哈夫曼编码来进行编码
             Map<Character,String> map1 = new HashMap<>();
             for(int i = 0;i < size;i++){
@@ -73,7 +73,11 @@ public class Main {
         }
         System.out.println("程序正在退出~~~~~");
     }
-    //菜单
+
+    /**
+     *   //菜单
+     */
+
     public static void menu(){
         System.out.println("👑👑👑👑👑👑👑👑👑👑👑👑👑👑👑👑👑👑👑👑👑👑👑👑");
         System.out.println("************欢迎使用哈夫曼编码转换器****************");
