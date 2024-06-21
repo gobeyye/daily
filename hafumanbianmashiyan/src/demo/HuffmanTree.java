@@ -8,7 +8,7 @@ package demo;
  * Time: 13:07
  */
 
-public class Tree {
+public class HuffmanTree {
     //创建哈夫曼树
     //调试完毕
     //参数说明：ht 表示传入的叶子节点，n 表示叶子节点数

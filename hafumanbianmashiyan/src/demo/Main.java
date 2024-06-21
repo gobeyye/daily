@@ -38,10 +38,10 @@ public class Main {
                 nodes[i] = new HTNode();
             }
             //3. 构成哈夫曼树
-            Tree.createHT(nodes,size);
+            HuffmanTree.createHT(nodes,size);
             //4. 生成哈夫曼编码
             HCode[] codes;
-            codes = Tree.createHCode(nodes,size);
+            codes = HuffmanTree.createHCode(nodes,size);
             //5. 根据各个字符的哈夫曼编码来进行编码
             Map<Character,String> map1 = new HashMap<>();
             for(int i = 0;i < size;i++){
