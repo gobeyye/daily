@@ -12,11 +12,9 @@ public class HCode {
     char data;//存储字符，Java 的 char 是两个字节，所以能存储汉字
 
     /**
-     * 构造方法，初始化 cd ，防止报错。
+     * 构造方法，初始化 cd ，防止报错
      */
     public HCode(){
         cd = new StringBuilder();
     }
-
-
 }
