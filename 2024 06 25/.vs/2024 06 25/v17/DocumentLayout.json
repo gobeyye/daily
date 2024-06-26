@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Gitee\u4EE3\u7801\\\u65E5\u5E38\u4EE3\u7801\\daily\\2024 06 25\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{228A528C-44CE-4C42-BE08-D86D3FEBB362}|2024 06 25\\2024 06 25.vcxproj|D:\\Gitee\u4EE3\u7801\\\u65E5\u5E38\u4EE3\u7801\\daily\\2024 06 25\\2024 06 25\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{228A528C-44CE-4C42-BE08-D86D3FEBB362}|2024 06 25\\2024 06 25.vcxproj|solutionrelative:2024 06 25\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{de1fc918-f32e-4dd7-a915-1792a051f26b}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\Gitee\u4EE3\u7801\\\u65E5\u5E38\u4EE3\u7801\\daily\\2024 06 25\\2024 06 25\\main.cpp",
+              "RelativeDocumentMoniker": "2024 06 25\\main.cpp",
+              "ToolTip": "D:\\Gitee\u4EE3\u7801\\\u65E5\u5E38\u4EE3\u7801\\daily\\2024 06 25\\2024 06 25\\main.cpp",
+              "RelativeToolTip": "2024 06 25\\main.cpp",
+              "ViewState": "AQIAABkAAAAAAAAAAAAuwCsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-25T02:08:46.722Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
